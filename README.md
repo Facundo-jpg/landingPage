@@ -1,3 +1,3 @@
 # landingPage
-trabajoPracticoNro0
-<blockquote>Hola Mundo</blockquote>
+
+<blockquote>trabajoPracticoNro0</blockquote>
