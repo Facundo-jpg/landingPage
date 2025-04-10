@@ -1,0 +1,67 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: antiquewhite;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    height: 100%; width: 100%;
+    object-fit: cover; /*hace que la img ocupe todo el contenedor sin deformarse*/
+}
+.producto{
+    width: 300px;
+    height: 120px;
+    background-color: rgb(84, 84, 228);
+    padding:10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.producto:nth-child(odd){
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 5px;
+    color: gray;
+    flex-direction: row-reverse;
+}
+
+.fotoProducto{
+    height: 100%;
+    width: 80px;
+    /* flex-basis: 80px;
+    flex-shrink: 0;
+    flex-grow: 0; */
+    flex: 0 0 100px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.datoProducto{
+    color: rgb(11, 14, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: capitalize!important;
+}
+
+.valoresProducto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.valoracion{
+    color:black;
+    height: 30px;
+    background-color: rgb(212, 236, 145);
+    flex: 0 0 0;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important
+}
+
