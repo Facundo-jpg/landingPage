@@ -5,30 +5,35 @@
 
 body{
     background-color: antiquewhite;
-
     font-family: 'Times New Roman', Times, serif;
 }
+
 img{
     height: 100%; width: 100%;
     object-fit: cover; /*hace que la img ocupe todo el contenedor sin deformarse*/
 }
+
 .columna{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    place-items: center;
 }
+
 .producto{
     width: 300px;
     height: 120px;
-    background-color: rgb(84, 84, 228);
+    background-color: rgb(118, 118, 218);
     padding:10px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
+
+/*.nombreClase:nth-child(EVEN):PARES*/
+/*.nombreClase:nth-child(ODD):IMPARES*/
 .producto:nth-child(odd){
-    background-color: transparent;
+    background-color: rgb(126, 195, 241);
     box-shadow: 0px 0px 10px 5px;
     color: gray;
     flex-direction: row-reverse;
@@ -44,6 +49,7 @@ img{
     border-radius: 6px;
     overflow: hidden;
 }
+
 .datoProducto{
     color: rgb(11, 14, 14);
     display: flex;
@@ -69,4 +75,3 @@ img{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important
 }
-

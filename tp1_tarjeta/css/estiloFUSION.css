@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: white;
+}
+
+.container_login{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+h4.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    color: rgb(151, 151, 151);
+    font-size: 3em;
+    text-align: center;
+    /*alineacion de elementos con position absolute*/
+    position: absolute;
+    top: 15vh;
+}
+
+.loginFormContainer{
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#formLogin{
+    min-height: 30px;
+    width: 100%;
+    background-color: pink;
+}
+
+#formLogin input[type="text"], #formLogin[type="password"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black; 
+    text-align: center;
+}
+
+#formLogin input[type="text"]:focus, #formLogin[type="password"]:focus{
+    outline: none;
+    border: 2px solid rgb(254, 0, 0);
+    padding-left: 1em;
+}
+
+.actionLogin{
+    min-height: 30px;
+    width: 100%;
+}
+
+.btnLogin{
+    width: 100%;
+    min-height: 30px;
+    border-radius: 5px;
+    background-color: #505AF3;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnLogin:hover{
+    color: white;
+    background-color: #6871f6;
+}
