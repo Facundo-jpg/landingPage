@@ -21,7 +21,7 @@ h4.logo{
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     color: rgb(151, 151, 151);
-    font-size: 3em;
+    font-size: 100px;
     text-align: center;
     /*alineacion de elementos con position absolute*/
     position: absolute;
@@ -31,7 +31,6 @@ h4.logo{
 .loginFormContainer{
     width: 100%;
     min-height: 100px;
-    background-color: white;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -42,11 +41,13 @@ h4.logo{
 
 #formLogin{
     min-height: 30px;
-    width: 100%;
-    background-color: pink;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
-#formLogin input[type="text"], #formLogin[type="password"]{
+#formLogin input[type="text"], #formLogin input[type="password"]{
     width: 100%;
     height: 30px;
     border-radius: 5px;
@@ -54,19 +55,20 @@ h4.logo{
     text-align: center;
 }
 
-#formLogin input[type="text"]:focus, #formLogin[type="password"]:focus{
+#formLogin input[type="text"]:focus, #formLogin input[type="password"]:focus{
     outline: none;
-    border: 2px solid rgb(254, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     padding-left: 1em;
 }
 
 .actionLogin{
     min-height: 30px;
     width: 100%;
+    place-items: center;
 }
 
 .btnLogin{
-    width: 100%;
+    width: 35%;
     min-height: 30px;
     border-radius: 5px;
     background-color: #505AF3;
@@ -74,6 +76,12 @@ h4.logo{
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 
 .btnLogin:hover{
