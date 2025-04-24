@@ -1,11 +1,15 @@
+@import url('../../Assets/css/fawesome-all.css');
+
 *{box-sizing: border-box;
     margin: 0;
     padding:0;
+    list-style: none;
 }
 
 body{
     background-color: antiquewhite;
     font-family: 'Times New Roman', Times, serif;
+    padding: 0.5em;
 }
 
 img{
@@ -13,15 +17,17 @@ img{
     object-fit: cover; /*hace que la img ocupe todo el contenedor sin deformarse*/
 }
 
-.columna{
+.contenedorProducto{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     place-items: center;
+    width: 100%;
 }
 
 .producto{
-    width: 300px;
+    width: 100%;
     height: 120px;
     background-color: rgb(118, 118, 218);
     padding:10px;
@@ -56,12 +62,14 @@ img{
     flex-direction: column;
     justify-content: space-between;
     text-transform: capitalize!important;
+    flex: 1 1 60px;
 }
 
 .valoresProducto{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0.5em;
 }
 
 .valoracion{
@@ -74,4 +82,76 @@ img{
     line-height: 30px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important
+}
+
+/*-----------------------Menu desplegable-----------------------*/
+
+header{
+    width: 100%;
+    padding:0%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: rgb(118, 118, 218); */
+    padding:10px;
+}
+
+.buscadorCarrito{
+        display: flex;
+        gap: 0.5em;
+}
+
+/* .buscadorCarrito button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+} */
+
+/* .buscadorCarrito button:hover{
+    color: steelblue;
+    text-shadow: 0px 0px 5px rgb(128, 128, 128, 0.473);
+} */
+
+header button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+header button:hover{
+    color: steelblue;
+    text-shadow: 0px 0px 5px rgb(128, 128, 128, 0.473);
+}
+
+.logo{
+    font-size: 1.5em;
+}
+
+.buscador input{
+    display: none;
+}
+
+.categoriaRopa{
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.categoriaRopa li{
+    font-size: 1.25em;
+    cursor: pointer;
+    flex: 0 0 100px;
 }
